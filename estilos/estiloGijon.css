@@ -1,0 +1,28 @@
+body {
+    background-color: #C1C1C5;
+    font-family: Arial;
+}
+
+h1 {
+    border: 3px solid rgb(255, 0, 0);
+    width: 500px;
+    text-align: center
+}
+
+p {
+    margin-left: 10px;
+}
+
+center {
+    border:3px solid red;
+}
+
+h2 {
+    background-color: red;
+    text-align: center;
+}
+
+h3 {
+    margin-left: 50px;
+}
+
