@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universidad Laboral</title>
-    <link rel="stylesheet" href="estilos/estiloGijon.css">
+    <link rel="stylesheet" href="estiloGijon.css">
 </head>
 <body class="cuerpoUniversidad">
 
-<h1>Universidad Laboral de <a href="gijon.html">Gijón</a></h1>
+<h1>Universidad Laboral de <a href="index.html">Gijón</a></h1>
     
     <p>La Universidad Laboral de Gijón es un edificio situado en la parroquia de Cabueñes del concejo de Gijón (Principado de Asturias, España). Desde su construcción entre 1948 y 1957, y hasta la década de 1980, fue sede de una institución franquista orientada a educar a los hijos de los trabajadores. En 2007 se reinventó bajo la marca Laboral Ciudad de la Cultura, que engloba equipamientos como la Radiotelevisión del Principado de Asturias, LABoral Centro de Arte y Creación Industrial y la Facultad de Comercio, Turismo y Ciencias Sociales de la Universidad de Oviedo. A su vez está integrada en la Milla del Conocimiento Margarita Salas.</p>
     <p>Se trata de la obra arquitectónica más importante de cuantas se realizaron en Asturias durante el siglo xx. Además, con sus 270 000 m², es el edificio más grande de España. Está declarado Bien de interés cultural con la categoría de Monumento desde 2016.</p>
 
-<img src="Imágenes/Universidad Laboral.jpg" alt="La labroal vista desde arriba">
+<img src="Universidad Laboral.jpg" alt="La labroal vista desde arriba">
 
 <hr>
 
@@ -56,12 +56,47 @@
 
     <p>Está situada en la fachada principal, con un arco de entrada rematado en forma de torre. Sobre este arco, de medio punto, se sitúa una cruz de la Victoria con el águila de San Juan y el yugo y las flechas de los Reyes Católicos, adornado con dos ángeles de tenantes.</p>
 
-<img src="Imágenes/Puerta Principal de la Laboral.jpg" alt="Puerta principal de la laboral" style="width:250px;height:400px;">
+<img src="Puerta Principal de la Laboral.jpg" alt="Puerta principal de la laboral" style="width:250px;height:400px;">
 
 <h3><span class="mw-headline" id="Torre">Torre</span></h3>
 
     <p>Con una altura de 130 m, es el edificio más alto del Principado de Asturias, siendo más alta que la torre de la Catedral de Oviedo y el edificio de piedra más alto de España. Un ascensor interno permite acceder al mirador, en la planta 17, desde donde se divisa la ciudad. Tiene como referentes estéticos diversos edificios históricos, como el Faro de Alejandría, la Torre de Hércules o la Giralda. Los azulejos que recubren los interiores de la torre son de cerámica de Talavera de la Reina. Puesto que fueron pintados a mano, cada uno de ellos es una pieza única.</p>
 
-<img src="Imágenes/Torre de la laboral.jpg" alt="Torre Universidad Laboral" style="width:250px;height:400px;">
+<img src="Torre de la laboral.jpg" alt="Torre Universidad Laboral" style="width:250px;height:400px;">
+
+<h2>Encuesta sobre Gijón</h2>
+<form method="post" action="paginaencuestaenviada.html">
+    <label for="input-text">Ingresa tu nombre:</label>
+    <input type="text" id="input-text" name="input-text"><br><br>
+    <label for="select-button">Sexo: </label>
+    <select id="select-button" name="select-button">
+      <option value="option1">Hombre</option>
+      <option value="option2">Mujer</option>
+      <option value="option3">Otro</option>
+    </select><br><br>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad"><br>
+    <br>
+    <label>¿Te gustaria visitar la universidad laboral?</label><br>
+    <input type="radio" id="radio-button1" name="radio-button" value="opcion1">
+    <label for="radio-button1">Si</label><br>
+    <input type="radio" id="radio-button2" name="radio-button" value="opcion2">
+    <label for="radio-button2">No</label><br>
+    <input type="radio" id="radio-button3" name="radio-button" value="opcion3">
+    <label for="radio-button3">No me lo he replanteado</label><br><br>
+    <input type="button" value="Borrar campos" onclick="borrarCampos()">
+    <input type="submit" value="Enviar">
+</form>
+  
+  <script>
+    function borrarCampos() {
+      document.getElementById("input-text").value = "";
+      document.getElementById("select-button").selectedIndex = 0;
+      document.getElementById("edad").value = "";
+      document.getElementById("radio-button1").checked = false;
+      document.getElementById("radio-button2").checked = false;
+      document.getElementById("radio-button3").checked = false;
+    }
+  </script>
 </body>
 </html>
